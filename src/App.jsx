@@ -59,7 +59,7 @@ function App() {
       onEnd={handleSectionEnd}
       onAddScore={handleAddScore}
       scores={scores}
-      isDemo={true} // 🔥 فقط 3 كروت
+      isDemo={true} 
     />
   );
 }
