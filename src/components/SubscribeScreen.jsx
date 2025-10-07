@@ -1,7 +1,9 @@
 import React from "react";
 
 export default function SubscribeScreen({ onBack }) {
-  const shopifyLink = "https://swalef-bitna.myshopify.com/products/swalef-game"; // 👈 غيّر للرابط الحقيقي بمتجرك
+  // ✅ هذا هو رابط منتجك الحقيقي على Shopify
+  const shopifyLink =
+    "https://zzi9cd-0f.myshopify.com/products/سوالف-بيتنا-النسخة-الكاملة";
 
   return (
     <div
@@ -16,9 +18,10 @@ export default function SubscribeScreen({ onBack }) {
     >
       <h2>🔒 النسخة التجريبية انتهت</h2>
       <p style={{ fontSize: "18px", marginBottom: "25px" }}>
-    لتكمل اللعبة والوصول إلى جميع الكروت، اشترك عبر متجرنا
+        لتكمل اللعبة والوصول إلى جميع الكروت، اشترك عبر متجرنا
       </p>
 
+      {/* زر الشراء على Shopify */}
       <a
         href={shopifyLink}
         target="_blank"
@@ -35,9 +38,10 @@ export default function SubscribeScreen({ onBack }) {
           transition: "0.3s",
         }}
       >
-        🛒اشترك الآن 
+        🛒 اشترك الآن
       </a>
 
+      {/* زر الرجوع داخل اللعبة */}
       <div style={{ marginTop: "25px" }}>
         <button
           onClick={onBack}
