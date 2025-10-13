@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function SubscribeScreen({ onBack }) {
-  // ✅ هذا هو رابط منتجك الحقيقي على Shopify
-  const shopifyLink =
-    "https://zzi9cd-0f.myshopify.com/products/سوالف-بيتنا-النسخة-الكاملة";
+  // ✅ هذا هو رابط منتجك الجديد على CardArena
+  const productLink =
+    "https://cardarena.net/products/%D8%B3%D9%88%D8%A7%D9%84%D9%81-%D8%A8%D9%8A%D8%AA%D9%86%D8%A7-%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9?variant=51926665429297";
 
   return (
     <div
@@ -18,12 +18,12 @@ export default function SubscribeScreen({ onBack }) {
     >
       <h2>🔒 النسخة التجريبية انتهت</h2>
       <p style={{ fontSize: "18px", marginBottom: "25px" }}>
-        لتكمل اللعبة والوصول إلى جميع الكروت، اشترك عبر متجرنا
+        لتكمل اللعبة والوصول إلى جميع الكروت، يمكنك شراء النسخة الكاملة من متجرنا
       </p>
 
-      {/* زر الشراء على Shopify */}
+      {/* زر الشراء على CardArena */}
       <a
-        href={shopifyLink}
+        href={productLink}
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -38,7 +38,7 @@ export default function SubscribeScreen({ onBack }) {
           transition: "0.3s",
         }}
       >
-        🛒 اشترك الآن
+        🛒 اشتري الآن
       </a>
 
       {/* زر الرجوع داخل اللعبة */}
